@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 # Use Active Storage variant
-gem 'rack-cors'
+# gem 'rack-cors'
 # gem 'image_processing', '~> 1.2'
 gem 'cloudinary'
 # Reduces boot times through caching; required in config/boot.rb
@@ -58,4 +58,3 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'dotenv-rails', groups: [:development, :test]
