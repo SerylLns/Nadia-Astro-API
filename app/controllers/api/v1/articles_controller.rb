@@ -6,7 +6,7 @@ class Api::V1::ArticlesController < ApplicationController
     @articles.each do |article|
       res[article.id] = {
         article: article,
-        photo: article.photo.url,
+        # photo: article.photo.url,
         likes: article.likes,
         comments: article.comments
       }
@@ -18,7 +18,7 @@ class Api::V1::ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     render json: {
       article: @article,
-      photo: @article.photo.url,
+        # photo: @article.photo.url,
       likes: @article.likes,
       comments: @article.comments
     }
