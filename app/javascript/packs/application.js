@@ -13,4 +13,5 @@ Turbolinks.start()
 ActiveStorage.start()
 
 // import "../layouts/application.css";
-import "../../assets/stylesheets/pages.scss";
+// import "../../assets/stylesheets/pages.scss";
+require("stylesheets/application.scss");

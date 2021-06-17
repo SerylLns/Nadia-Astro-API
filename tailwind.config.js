@@ -1,10 +1,12 @@
 const env = process.env.NODE_ENV;
 
 module.exports = {
-  purge: {
-    enable: env !== 'development',
-    content: ["./app/views/**/*.html.erb"]
-  },
+  purge: [
+    "./app/**/*.html",
+    "./app/**/*.erb",
+    "./app/**/*.vue",
+    "./app/**/*.jsx",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
