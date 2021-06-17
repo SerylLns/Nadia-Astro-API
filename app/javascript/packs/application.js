@@ -13,5 +13,3 @@ Turbolinks.start()
 ActiveStorage.start()
 
 import "../layouts/application.css";
-
-import './index';
