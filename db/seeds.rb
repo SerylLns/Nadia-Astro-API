@@ -3,6 +3,7 @@ require "open-uri"
 puts "Clear database..."
 Like.destroy_all
 Comment.destroy_all
+Video.destroy_all
 Article.destroy_all
 
 Article.create!(
