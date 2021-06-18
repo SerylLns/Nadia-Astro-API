@@ -2,6 +2,8 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { NavLink } from "react-router-dom";
 import React from 'react';
+import shamanIcon from '../../../assets/images/logoshaman.svg';
+
 
 export default function Navbar() {
   return (
@@ -23,14 +25,14 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                  {/* <img
+                    className="block lg:hidden h-12 w-auto"
+                    src={shamanIcon}
                     alt="Workflow"
-                  />
+                  /> */}
                   <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
+                    className="hidden lg:block h-full w-auto"
+                    src={shamanIcon}
                     alt="Workflow"
                   />
                 </div>
@@ -39,40 +41,40 @@ export default function Navbar() {
                   <NavLink
                     exact
                     to="/about"
-                    activeClassName="border-indigo-500 text-gray-900"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    activeClassName="border-indigo-500 text-md text-green-700 "
+                    className="border-transparent text-lg text-gray-500 hover:border-gray-300 font-medium hover:text-gray-700"
                   >
                     Dihya
                   </NavLink>
                   <NavLink
                     exact
                     to="/"
-                    activeClassName="border-indigo-500 text-gray-900"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    activeClassName="border-indigo-500 text-green-700"
+                    className="border-transparent text-lg text-gray-500 font-medium hover:border-gray-300 hover:text-gray-700"
                   >
                     Accueil
                   </NavLink>
                   <NavLink
                     exact
                     to="/blog"
-                    activeClassName="border-indigo-500 text-gray-900"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    activeClassName="border-indigo-500 text-green-700"
+                    className="border-transparent text-lg text-gray-500 font-medium hover:border-gray-300 hover:text-gray-700"
                   >
                     Blog
                   </NavLink>
                   <NavLink
                     exact
                     to="/video"
-                    activeClassName="border-indigo-500 text-gray-900"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    activeClassName="border-indigo-500 text-green-700"
+                    className="border-transparent text-lg text-gray-500 font-medium hover:border-gray-300 hover:text-gray-700"
                   >
                     Mes vidéo
                   </NavLink>
                   <NavLink
                     exact
                     to="/contact"
-                    activeClassName="border-indigo-500 text-gray-900"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                    activeClassName="border-indigo-500 text-green-700"
+                    className="border-transparent text-lg text-gray-500 font-medium hover:border-gray-300 hover:text-gray-700"
                   >
                     Contact
                   </NavLink>
@@ -82,29 +84,29 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="sm:hidden ">
-            <div className="pt-2 pb-4 space-y-1 ">
+            <div className="pt-2 pb-4 space-y-1 flex flex-col	 items-center justify-around">
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <NavLink
                 exact
                 to="/about"
-                activeClassName="bg-indigo-50 border-indigo-500 text-indigo-700"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+                activeClassName="bg-indigo-50 text-green-700"
+                className="border-transparent text-gray-500 font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
               >
                 Dihya
               </NavLink>
               <NavLink
                 exact
                 to="/"
-                activeClassName="border-indigo-500 text-gray-900"
-                className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                activeClassName="border-indigo-500 text-green-700"
+                className="border-transparent text-gray-500 font-medium hover:border-gray-300 hover:text-gray-700"
               >
                 Accueil
               </NavLink>
               <NavLink
                 exact
                 to="/blog"
-                activeClassName="bg-indigo-50 border-indigo-500 text-indigo-700"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+                activeClassName="bg-indigo-50 border-indigo-500 text-green-700"
+                className="border-transparent text-gray-500 font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
               >
                 Blog
               </NavLink>
@@ -112,16 +114,16 @@ export default function Navbar() {
               <NavLink
                 exact
                 to="/video"
-                activeClassName="bg-indigo-50 border-indigo-500 text-indigo-700"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+                activeClassName="bg-indigo-50 border-indigo-500 text-green-700"
+                className="border-transparent text-gray-500 font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
               >
                 Mes vidéo
               </NavLink>
               <NavLink
                 exact
                 to="/contact"
-                activeClassName="bg-indigo-50 border-indigo-500 text-indigo-700"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+                activeClassName="bg-indigo-50 border-indigo-500 text-green-700"
+                className="border-transparent text-gray-500 font-medium hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
               >
                 Contact
               </NavLink>
