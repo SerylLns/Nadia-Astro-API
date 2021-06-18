@@ -1,0 +1,21 @@
+<%= render  "navbar" %>
+<div class="w-3/5 mx-auto py-6">
+  <%= simple_form_for @video do |f| %>
+    <label for="username" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+      titre
+    </label>
+    <%= f.input :title, label: false, class: "flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" %>
+
+    <label for="username" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+      url
+    </label>
+    <%= f.input :url, label: false, class: "flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" %>
+
+    <label for="username" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+      Hébergeur(Youtube/Viméo)
+    </label>
+    <%= f.input :provider, label: false, class: "flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" %>
+
+    <%= f.submit "Créer la video", class: "mr-6 cursor-pointer inline-flex items-center px-5 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+  <% end %>
+</div>

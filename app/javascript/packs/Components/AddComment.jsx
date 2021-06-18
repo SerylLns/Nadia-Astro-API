@@ -11,7 +11,7 @@ const AddComment = ({articleId, getArticle}) => {
     e.preventDefault();
      axios({
        method: "POST",
-       url: `api/v1/articles/${articleId}/comment`,
+       url: `/api/v1/articles/${articleId}/comment`,
        data: {
          pseudo: pseudo,
          content: content

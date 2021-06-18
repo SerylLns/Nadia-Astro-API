@@ -15,3 +15,5 @@ ActiveStorage.start()
 // import "../layouts/application.css";
 // import "../../assets/stylesheets/pages.scss";
 require("stylesheets/application.scss");
+require("trix")
+require("@rails/actiontext")

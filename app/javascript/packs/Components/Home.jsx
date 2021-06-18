@@ -74,7 +74,7 @@ const Home = () => {
                       </h1>
                     </NavLink>
                     <p className="mb-2 leading-relaxed">
-                      {contents[key].article.content.slice(0, 200)}...
+                      {/* {contents[key].article.content.slice(0, 200)}... */}
                     </p>
                     <div className="flex justify-between w-5/6">
                       <NavLink
@@ -141,7 +141,7 @@ const Home = () => {
                       </h1>
                     </NavLink>
                     <p className="mb-2 leading-relaxed">
-                      {contents[key].article.content.slice(0, 200)}...
+                      {/* {contents[key].article.content.slice(0, 200)}... */}
                     </p>
                     <div className="flex justify-between w-5/6">
                       <NavLink
