@@ -35,9 +35,11 @@
                                 <button
                                     class="mb-2 md:mb-0 bg-white  px-5 py-2 shadow-sm tracking-wider border  border-red-700 text-gray-600 rounded-full hover:bg-gray-100 inline-flex items-center space-x-2 ">
                                 <% if video.provider == "youtube" %>
+                                    <%#  
                                     <span class="text-green-400 text-xl hover:text-green-500 rounded-lg">
-                                        <%= image_tag "youtube", class: "svg-inline--fa fa-shopify  w-5 h-5 text-white" %>
+                                        <%# image_tag "youtube", class: "svg-inline--fa fa-shopify  w-5 h-5 text-white" 
                                     </span>
+                                    %>
                                 <% else %>
                                 <% end %>
                                     <span><%= video.provider.capitalize %></span>
