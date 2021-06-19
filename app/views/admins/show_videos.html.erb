@@ -1,7 +1,7 @@
 <%= render  "navbar" %>
 <h1 class="text-center text-3xl my-4">Vidéos</h1>
     <button
-    class="mb-2 md:mb-0 bg-green-900 px-5 ml-6 my-3 py-2 shadow-sm tracking-wider text-white rounded-full hover:bg-green-700"
+    class="mb-2 md:mb-0 shadow-xl bg-green-900 px-5 ml-6 my-3 py-2 tracking-wider text-white rounded-full hover:bg-green-700"
     type="button" aria-label="like">Ajouter une video</button>
 <div class="relative min-h-screen flex flex-col mt-8 ">
     <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
@@ -33,7 +33,7 @@
                         <div class="flex space-x-3 text-sm color-green-600 font-medium">
                             <div class="flex-auto flex space-x-3">
                                 <button
-                                    class="mb-2 md:mb-0 bg-white  px-5 py-2 shadow-sm tracking-wider border  border-red-700 text-gray-600 rounded-full hover:bg-gray-100 inline-flex items-center space-x-2 ">
+                                    class="shadow-lg mb-2 md:mb-0 bg-white  px-5 py-2 shadow-sm tracking-wider border  border-gray-50 text-gray-600 rounded-full inline-flex items-center space-x-2 ">
                                 <% if video.provider == "youtube" %>
                                     <%#  
                                     <span class="text-green-400 text-xl hover:text-green-500 rounded-lg">
@@ -45,9 +45,7 @@
                                     <span><%= video.provider.capitalize %></span>
                                 </button>
                             </div>
-                            <button
-                                class="mb-2 md:mb-0 bg-red-900 px-5 py-2 shadow-sm tracking-wider text-white rounded-full hover:bg-red-700"
-                                type="button" aria-label="like">Supprimer la video</button>
+                            <%= link_to "Supprimer la video", destroy_video_path(video), method: :delete, class: "mb-2 md:mb-0 bg-red-900 px-5 py-2 shadow-sm tracking-wider text-white rounded-full hover:bg-red-700" %>
                         </div>
                     </div>
                 </div>

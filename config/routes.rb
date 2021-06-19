@@ -29,6 +29,7 @@ Rails.application.routes.draw do
   get "/admin/videos", to: "admins#show_videos", as: "videos"
   get "/admin/new/video", to: "admins#new_video"
   post "/admin/videos", to: "admins#create_video"
+  delete '/admin/video/:id', to: "admins#destroy_video", as: "destroy_video"
 
   # API routes 
   namespace :api do

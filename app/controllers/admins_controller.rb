@@ -77,6 +77,8 @@ class AdminsController < ApplicationController
   def set_admin
     @user = User.find(params[:id])
     @user.is_admin = !@user.is_admin
+    @user.save
+    redirect_to admin_index_path
   end
   
   #************************* 
@@ -95,6 +97,14 @@ class AdminsController < ApplicationController
     @video.save
     redirect_to "/admin/videos"
   end
+
+  def destroy_video
+    @video = Video.find(params[:id])
+    @video.destroy
+    redirect_to "/admin/videos"
+  end
+
+
 
   private
 
